@@ -285,8 +285,6 @@ bool isAnagram(String firstWord, String secondWord) {
   
   }
 
-print("Unsorted $firstList $secondList");
-
   firstList.sort();
   secondList.sort();
 
@@ -295,10 +293,6 @@ print("Unsorted $firstList $secondList");
       return false;
     }
   }
-
-  print(firstList);
-  print(secondList);
-
   return true;
 }
 
