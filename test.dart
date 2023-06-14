@@ -134,10 +134,15 @@ arraySum(List<int> array) {
 }
 
 //Problem 10: Find Maximum and Minimum
-void minAndMaxArray(List<int> array) {
+(int, int) minAndMaxArray(List<int> array) {
   var arr = bubbleSort(array);
 
-  print("Min: ${arr[0]}, max: ${arr[(array.length - 1)]}");
+  int min = arr[0];
+  int max = arr[array.length - 1];
+
+  return (min, max);
+
+  // print("Min: ${arr[0]}, max: ${arr[(array.length - 1)]}");
 }
 
 //Problem 11: Count Vowels and Consonants
